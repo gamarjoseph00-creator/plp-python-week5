@@ -1,11 +1,15 @@
 import math
 
+
 def tables_needed(people, seats):
-    # Return people divided by seats, rounded UP with math.ceil()
+    """Return how many tables are needed, rounding up."""
+    return math.ceil(people / seats)
+
 
 def welcome(name):
-    # Return "Welcome to PLP, NAME!" using the name
+    """Return a welcome message for a learner."""
+    return "Welcome to PLP, " + name + "!"
+
 
 if __name__ == "__main__":
     print(tables_needed(10, 4))
-    
